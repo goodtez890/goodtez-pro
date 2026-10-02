@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GOODTEZ PRO | Lovable Developer & Digital Services</title>
+<meta name="description" content="Freelance Lovable developer building fast websites, apps, AI chatbots and local SEO for service businesses and online brands.">
+<meta property="og:title" content="GOODTEZ PRO | Lovable Developer & Digital Services">
+<meta property="og:description" content="Websites, Lovable apps, AI automation, Google Business Profile and social media for growing businesses.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070b1a;--bg2:#0d1430;--ink:#eef1ff;--mute:#9aa4c7;--v:hsl(var(--h) 90% 66%);--c:hsl(calc(var(--h) + 70) 90% 58%);--g:linear-gradient(120deg,var(--v),var(--c));animation:hue 16s linear infinite;--card:rgba(255,255,255,.05);--line:rgba(255,255,255,.1);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+@property --h{syntax:"<number>";inherits:true;initial-value:265}
+@keyframes hue{from{--h:265}to{--h:625}}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 Inter,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+section{padding:96px 0}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:var(--g);z-index:60}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(7,11,26,.7);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{font:700 20px 'Space Grotesk';letter-spacing:.5px}
+.logo b{background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
+.links{display:flex;gap:28px;align-items:center}
+.links a:not(.btn){position:relative;color:var(--mute);font-size:15px;transition:color .2s}
+.links a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-4px;height:2px;width:0;background:var(--g);transition:width .25s}
+.links a:not(.btn):hover{color:var(--ink)}.links a:not(.btn):hover::after{width:100%}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;font-weight:500;border:1px solid var(--line);position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.btn.p{background:var(--g);color:#06091a;border:0;box-shadow:0 0 28px hsl(var(--h) 90% 66% / .45)}
+.btn.p::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.55) 50%,transparent 65%);transform:translateX(-120%);transition:transform .6s}
+.btn.p:hover::after{transform:translateX(120%)}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--c);outline-offset:3px}
+#burger{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:10px;padding:8px 12px;font-size:18px}
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;padding:80px 0}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;animation:fl 14s ease-in-out infinite}
+.o1{width:420px;height:420px;background:var(--v);top:-80px;left:-90px}
+.o2{width:380px;height:380px;background:var(--c);bottom:-100px;right:-60px;animation-delay:-6s;opacity:.35}
+@keyframes fl{50%{transform:translate(40px,-34px) scale(1.1)}}
+.hero .wrap{position:relative;max-width:1400px;width:100%}.hero .btn{padding:17px 32px;font-size:17px}
+h1{font-size:clamp(44px,9.2vw,128px);letter-spacing:-.035em;line-height:1.02;max-width:none}
+h1 span{display:inline-block;opacity:0;transform:translateY(28px);animation:up .7s forwards}
+@keyframes up{to{opacity:1;transform:none}}
+.sub{font:500 clamp(24px,4vw,52px) 'Space Grotesk';margin:30px 0 20px;min-height:1.5em;color:var(--c)}
+.sub::after{content:"|";margin-left:2px;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.lead{color:var(--mute);max-width:none;font-size:clamp(18px,1.9vw,24px);line-height:1.6}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:0}
+.stat{padding:28px 18px;text-align:center}
+.stat b{display:block;font:700 clamp(30px,4vw,46px) 'Space Grotesk';background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{color:var(--mute);font-size:14px}
+.glass{background:var(--card);border:1px solid var(--line);border-radius:20px;backdrop-filter:blur(10px);transition:transform .3s,box-shadow .3s,border-color .3s}
+.glass:hover{transform:translateY(-6px);border-color:hsl(var(--h) 90% 66% / .55);box-shadow:0 14px 44px hsl(var(--h) 90% 66% / .22)}
+.mq{overflow:hidden;border-block:1px solid var(--line);padding:20px 0;mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.mq div{display:flex;gap:56px;width:max-content;animation:mq 28s linear infinite;font:500 20px 'Space Grotesk';color:var(--mute)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.sh{margin-bottom:46px;max-width:640px}
+.sh h2{font-size:clamp(30px,4.4vw,48px);letter-spacing:-.02em}
+.sh p{color:var(--mute);margin:14px 0 0}
+.grid{display:grid;gap:20px}
+.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+.card{padding:28px}
+.card h3{font-size:21px;margin:14px 0 8px}
+.card p{color:var(--mute);margin:0;font-size:15px}
+.ic{width:46px;height:46px;border-radius:14px;background:var(--g);display:grid;place-items:center;font-size:21px;color:#06091a}
+.more{display:inline-block;margin-top:16px;color:var(--c);font-size:14px}
+.shot{aspect-ratio:16/10;border-radius:14px;margin-bottom:18px;background:linear-gradient(135deg,hsl(var(--h) 90% 66% / .45),hsl(calc(var(--h) + 70) 90% 58% / .25)),var(--bg2);display:grid;place-items:center;color:var(--mute);font-size:13px}
+.tl{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;counter-reset:s;position:relative}
+.tl .glass{padding:22px;counter-increment:s}
+.tl .glass::before{content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--g);color:#06091a;font-weight:700;margin-bottom:12px}
+.tl h3{font-size:19px;margin-bottom:6px}.tl p{margin:0;color:var(--mute);font-size:14px}
+.q{font-size:17px;margin:0 0 16px}.who{color:var(--mute);font-size:14px}
+.band{background:var(--bg2);border-block:1px solid var(--line);text-align:center}
+.band h2{font-size:clamp(32px,5vw,58px);max-width:18ch;margin:0 auto 18px}
+.band p{color:var(--mute);max-width:52ch;margin:0 auto 30px}
+footer{padding:48px 0 90px;color:var(--mute);font-size:14px}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
+footer h4{margin:0 0 10px;color:var(--ink);font:700 15px 'Space Grotesk'}
+footer a{display:block;padding:3px 0}footer a:hover{color:var(--ink)}
+.wa{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:55;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;font-size:26px;box-shadow:0 8px 28px rgba(37,211,102,.4)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media(max-width:860px){
+.g3,.stats{grid-template-columns:repeat(2,1fr)}.g2{grid-template-columns:1fr}.tl{grid-template-columns:1fr}.fg{grid-template-columns:1fr}
+#burger{display:block}
+.links{position:fixed;top:0;right:0;height:100%;width:min(80vw,320px);background:var(--bg2);flex-direction:column;align-items:flex-start;padding:90px 28px;transform:translateX(100%);transition:transform .35s;border-left:1px solid var(--line)}
+.links.open{transform:none}
+section{padding:70px 0}}
+@media(max-width:520px){.g3{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}h1 span,.rv{opacity:1;transform:none}.mq div{animation:none}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<header><div class="wrap"><nav>
+<a class="logo" href="#top">GOODTEZ <b>PRO</b></a>
+<button id="burger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+<div class="links" id="links">
+<a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a><a href="#about">Why me</a><a href="#contact">Contact</a>
+<a class="btn p" href="#contact">Hire me</a>
+</div></nav></div></header>
+
+<main id="top">
+<div class="hero">
+<i class="orb o1"></i><i class="orb o2"></i>
+<div class="wrap">
+<h1 id="h1">Websites and apps that bring in customers.</h1>
+<div class="sub" id="sub" aria-live="off"></div>
+<p class="lead">I build fast, good-looking digital products for local service businesses and online brands, from a first prototype to a launched site that gets found on Google.</p>
+<div class="cta"><a class="btn p" href="#work">View my work</a><a class="btn" href="#contact">Book a free consultation</a></div>
+</div></div>
+
+<section style="padding:0 0 70px"><div class="wrap stats">
+<div class="glass stat rv"><b data-to="50" data-suf="+">0</b><span>Projects delivered</span></div>
+<div class="glass stat rv"><b data-to="30" data-suf="+">0</b><span>Happy clients</span></div>
+<div class="glass stat rv"><b data-to="3" data-suf="+">0</b><span>Years experience</span></div>
+<div class="glass stat rv"><b data-to="6" data-suf="">0</b><span>Countries served</span></div>
+</div></section>
+
+<div class="mq" aria-label="Tools I use"><div id="mq"></div></div>
+
+<section id="services"><div class="wrap">
+<div class="sh rv"><h2>Services built around getting you customers</h2><p>Pick one, or let me run the whole pipeline: site, search visibility, social and follow-up.</p></div>
+<div class="grid g3" id="sv"></div>
+</div></section>
+
+<section id="work" style="background:var(--bg2)"><div class="wrap">
+<div class="sh rv"><h2>Selected work</h2><p>Sample projects. Replace these with your real case studies.</p></div>
+<div class="grid g3">
+<a href="#contact" class="glass card rv"><div class="shot">Project image</div><h3>Braiding studio website</h3><p>Booking-ready site and Google Business Profile for a home-based braiding business.</p><span class="more">Website + Local SEO</span></a>
+<a href="#contact" class="glass card rv"><div class="shot">Project image</div><h3>Salon social growth</h3><p>Content calendar, branded posts and weekly publishing across Instagram, Facebook and TikTok.</p><span class="more">Social media</span></a>
+<a href="#contact" class="glass card rv"><div class="shot">Project image</div><h3>Client portal built with Lovable</h3><p>A working MVP with logins and bookings, shipped in days instead of months.</p><span class="more">Lovable app</span></a>
+</div></div></section>
+
+<section id="about"><div class="wrap">
+<div class="sh rv"><h2>Why work with me</h2></div>
+<div class="grid g2">
+<div class="glass card rv"><div class="ic">&#9889;</div><h3>Fast delivery</h3><p>AI-assisted building means you see a working version in days and can react to something real.</p></div>
+<div class="glass card rv"><div class="ic">&#10024;</div><h3>Lovable expertise</h3><p>I turn plain-language ideas into production apps, then refine them by hand where it matters.</p></div>
+<div class="glass card rv"><div class="ic">&#129517;</div><h3>End-to-end ownership</h3><p>Design, build, launch, search listings and social. One person is accountable for the result.</p></div>
+<div class="glass card rv"><div class="ic">&#128172;</div><h3>Clear communication</h3><p>Plain updates, fixed scopes and honest timelines, on WhatsApp or email, whichever you prefer.</p></div>
+</div></div></section>
+
+<section id="process" style="background:var(--bg2)"><div class="wrap">
+<div class="sh rv"><h2>How a project runs</h2></div>
+<div class="tl">
+<div class="glass rv"><h3>Discovery</h3><p>We agree on goals, audience and what success looks like.</p></div>
+<div class="glass rv"><h3>Design</h3><p>You review layouts and copy direction before anything is built.</p></div>
+<div class="glass rv"><h3>Build</h3><p>Responsive, fast and tested on real devices.</p></div>
+<div class="glass rv"><h3>Launch</h3><p>Domain, analytics and search listings go live together.</p></div>
+<div class="glass rv"><h3>Support</h3><p>Fixes, updates and growth after launch.</p></div>
+</div></div></section>
+
+<section><div class="wrap">
+<div class="sh rv"><h2>What clients say</h2><p>Sample testimonials. Swap in real ones.</p></div>
+<div class="grid g3">
+<div class="glass card rv"><p class="q">"The site was live in a week and bookings started coming in straight away."</p><div class="who">Salon owner, UK</div></div>
+<div class="glass card rv"><p class="q">"Clear, quick and no jargon. My Google profile finally looks professional."</p><div class="who">Braiding studio, Italy</div></div>
+<div class="glass card rv"><p class="q">"He turned a rough idea into a working app I could show investors."</p><div class="who">Startup founder</div></div>
+</div></div></section>
+
+<section class="band" id="contact"><div class="wrap rv">
+<h2>Ready to get your business online?</h2>
+<p>Tell me what you do and where you want to be in six months. I'll reply with a plan and a fixed quote.</p>
+<div class="cta" style="justify-content:center"><a class="btn p" href="mailto:goodtezpro@gmail.com">Email goodtezpro@gmail.com</a><a class="btn" href="https://wa.me/goodtez002" target="_blank" rel="noopener">Chat on WhatsApp</a><a class="btn" href="https://www.linkedin.com/in/g%C3%B8%C3%B5dt%C3%ABz-pr%C3%B8-1504452b2" target="_blank" rel="noopener">Message me on LinkedIn</a></div>
+</div></section>
+</main>
+
+<footer><div class="wrap fg">
+<div><h4>GOODTEZ PRO</h4><p>Lovable developer and digital services specialist. Websites, apps, AI automation and local SEO.</p></div>
+<div><h4>Services</h4><div id="fs"></div></div>
+<div><h4>Connect</h4><a href="mailto:goodtezpro@gmail.com">Email</a><a href="https://wa.me/goodtez002" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.linkedin.com/in/g%C3%B8%C3%B5dt%C3%ABz-pr%C3%B8-1504452b2" target="_blank" rel="noopener">LinkedIn</a><a href="#">YouTube</a></div>
+</div><div class="wrap" style="margin-top:34px">&copy; 2026 GOODTEZ PRO. All rights reserved.</div></footer>
+
+<a class="wa" href="https://wa.me/goodtez002" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">&#128172;</a>
+
+<script>
+var S=[["&#9889;","Lovable app development","MVPs, client portals and booking apps, prototyped and deployed fast."],["&#128187;","Web design & development","Custom responsive business sites, landing pages and redesigns."],["&#129302;","AI automation & chatbots","Chatbots and workflows that answer customers and save hours."],["&#128269;","SEO & local SEO","On-page fixes, keyword strategy and better rankings."],["&#128205;","Google Business Profile","Full optimization, review strategy and map visibility."],["&#128241;","Social media management","Planning, posting and branding on Instagram, Facebook and TikTok."],["&#128722;","E-commerce & Shopify","Store setup, Merchant Center and product feed optimization."],["&#127912;","UI/UX design","Figma wireframes, prototypes and polished interfaces."],["&#128200;","Lead generation","Funnels, outreach systems and Odoo CRM setup."]];
+var sv=document.getElementById('sv'),fs=document.getElementById('fs');
+S.forEach(function(s){sv.insertAdjacentHTML('beforeend','<a href="#contact" class="glass card rv"><div class="ic">'+s[0]+'</div><h3>'+s[1]+'</h3><p>'+s[2]+'</p><span class="more">Learn more</span></a>');fs.insertAdjacentHTML('beforeend','<a href="#services">'+s[1]+'</a>')});
+var T="Lovable,React,Figma,Canva,Photoshop,WordPress,Wix,Shopify,Odoo,GitHub".split(","),m=document.getElementById('mq');
+m.innerHTML=T.concat(T).map(function(t){return'<span>'+t+'</span>'}).join('');
+var h=document.getElementById('h1');h.setAttribute('aria-label',h.textContent);
+h.innerHTML=h.textContent.split(' ').map(function(w,i){return'<span style="animation-delay:'+(i*.1+.1)+'s">'+w+'</span>'}).join(' ');
+var R=["Lovable Developer","Web Designer","AI Automation","Local SEO Specialist"],ri=0,ci=0,del=false,sub=document.getElementById('sub'),rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function ty(){var w=R[ri];if(rm){sub.textContent=w;ri=(ri+1)%4;return setTimeout(ty,2200)}
+ci+=del?-1:1;sub.textContent=w.slice(0,ci);var d=del?35:75;
+if(!del&&ci===w.length){del=true;d=1500}else if(del&&ci===0){del=false;ri=(ri+1)%R.length;d=300}setTimeout(ty,d)}
+ty();
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');var b=e.target.querySelector('[data-to]');if(b)cnt(b);io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll('.rv').forEach(function(el,i){el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)});
+function cnt(b){var to=+b.dataset.to,suf=b.dataset.suf,t0=null;function f(t){t0=t0||t;var p=Math.min((t-t0)/1400,1);b.textContent=Math.round(to*(1-Math.pow(1-p,3)))+(p===1?suf:'');if(p<1)requestAnimationFrame(f)}rm?b.textContent=to+suf:requestAnimationFrame(f)}
+var bar=document.getElementById('bar');addEventListener('scroll',function(){bar.style.width=(scrollY/(document.documentElement.scrollHeight-innerHeight)*100)+'%'},{passive:true});
+var L=document.getElementById('links'),B=document.getElementById('burger');
+B.onclick=function(){var o=L.classList.toggle('open');B.setAttribute('aria-expanded',o)};
+L.querySelectorAll('a').forEach(function(a){a.onclick=function(){L.classList.remove('open');B.setAttribute('aria-expanded',false)}});
+</script>
+</body>
+</html>
